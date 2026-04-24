@@ -3,7 +3,7 @@
 A neural machine translator built from scratch using a Transformer architecture, trained on 118,964 English-Spanish sentence pairs.
 
 ## Live Demo
-👉 [Open on Streamlit Cloud](https://your-app-url.streamlit.app)
+👉 [Open on Streamlit Cloud]([https://your-app-url.streamlit.app](https://english-to-espanayol-translator.streamlit.app/))
 
 ## Model
 - Architecture: Transformer Encoder-Decoder (`rui_torch_transformer.py`)
