@@ -47,7 +47,7 @@ def tokenize(text, lang='en'):
 @st.cache_resource
 def load_pipeline():
     device = torch.device('cpu')
-    save_dir = Path(__file__).parent / 'saved_model'
+   save_dir = Path(__file__).parent
 
     with open(save_dir / 'src_vocab.pkl', 'rb') as f: sv  = pickle.load(f)
     with open(save_dir / 'tgt_vocab.pkl', 'rb') as f: tv  = pickle.load(f)
@@ -64,7 +64,7 @@ def load_pipeline():
     ).to(device)
 
     mdl.load_state_dict(
-        torch.load(save_dir / 'translator_weights.pt', map_location=device)
+        torch.load(save_dir / 'best_model.pt', map_location=device)
     )
     mdl.eval()
     return mdl, sv, tv, cfg, device
