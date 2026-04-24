@@ -4,6 +4,7 @@ A neural machine translator built from scratch using a Transformer architecture,
 
 ## Live Demo
 👉 [Open on Streamlit Cloud]([https://your-app-url.streamlit.app](https://english-to-espanayol-translator.streamlit.app/))
+https://english-to-espanayol-translator.streamlit.app/
 
 ## Model
 - Architecture: Transformer Encoder-Decoder (`rui_torch_transformer.py`)
